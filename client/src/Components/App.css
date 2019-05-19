@@ -1,0 +1,43 @@
+.navBarButtons img{
+	max-width: 50px;
+	max-height: 50px;
+}
+
+#headerButtons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.bodyContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.bodyContainer img{
+	max-height: 75%;
+	max-width: 75%;
+}
+
+.footerImgContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footerImgContainer img {
+	max-width: 50px;
+	max-height: 50px;
+}
+
+.buildOwn {
+	display: flex;
+	flex-direction: column;
+}
+
+.linkContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
