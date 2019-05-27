@@ -1,30 +1,30 @@
 import React from 'react'
-import { Button} from 'react-bootstrap';
+
 class Activities extends React.Component {
     state = {
       clicked: false
     }
     constructor(props) {
         super(props);
-        this.handleButtonClick = this.handleButtonClick.bind(this);
-        this.state.clicked = props.clicked;
+        // this.handleButtonClick = this.handleButtonClick.bind(this);
+        // this.state.clicked = props.clicked;
       }
-      handleButtonClick() {
-          console.log(this.state);
-        this.state.clicked = !this.state.clicked;
-      }
+      
      render() {
-     let { clicked } = this.state;
-
+      // let activities = this.props.activities
+      console.log(this.props)
       return (
-        <div>
-        <Button
-          variant="primary"
-          onClick={this.handleButtonClick}>
-          { clicked ? 'Close' : 'ViewAll' }
-        </Button>
-        </div>
-        );
+        this.props.activities.map((oneActivity, index) => {
+          return (
+            <div key={index}>
+              
+              <img src={oneActivity.pic} />
+            
+            </div>
+            );
+        })
+      )
+      
 
     }
 }

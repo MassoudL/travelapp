@@ -46,7 +46,7 @@ class SimpleMenu extends React.Component {
                 Itineraries
               </Link>
           </MenuItem>
-          <MenuItem onClick={this.handleClose}>Logout</MenuItem>
+          <MenuItem onClick={this.handleClose}>Login</MenuItem>
         </Menu>
       </div>
     );

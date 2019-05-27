@@ -25,11 +25,15 @@ this.props.getCities()
     //const cities = this.state.citiesComponent
     const cities = this.props.cities
     return (
-		<div >
+		<div className='cityContainer'>
 	{cities && cities.map(city => {
         return(
             <div key={city.cityName}>
-                <Link to={"/itineraries/" + city._id}><h2>{city.cityName}</h2></Link>
+                <Link to={"/itineraries/" + city._id}>
+                  <h2>{city.cityName}</h2>
+                  <img src={city.pic} className='picContainer'/>
+                </Link>
+                
             </div>
             
         )

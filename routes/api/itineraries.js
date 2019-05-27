@@ -13,15 +13,13 @@ router.get('/', function(req, res){
     });
 })
 
-router.get('/:id', function(req, res){
-    console.log("from nodes", req);
-    Itinerary.find({"cityId": req.params.id}, (itineraryList, err) => {
-        if(err){
-            console.log(err)
-        }else{
-            console.log(itineraryList)
-            res.send(itineraryList)
-        }
+router.get('/:id', (req, res) => {
+    
+    Itinerary.find({"cityId": req.params.id}, (err ,itineraryList ) => {
+        if(err) console.log("error: " + err)
+        console.log("test")
+          res.send(itineraryList)
+        
     })
 
     

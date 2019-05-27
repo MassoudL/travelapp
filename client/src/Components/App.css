@@ -41,3 +41,33 @@
 	flex-direction: row;
 	justify-content: space-around;
 }
+
+.cityContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.itinerariesContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+}
+
+/* .activitiesContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+
+} */
+
+.picContainer {
+	width: 500px;
+	height: 350px;
+}

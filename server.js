@@ -26,6 +26,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const citiesRoute = require('./routes/api/cities');
+const usersRoute = require('./routes/api/users');
+
 
 const itinerariesRoute = require('./routes/api/itineraries')
 

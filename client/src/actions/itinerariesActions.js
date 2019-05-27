@@ -4,7 +4,7 @@ import {GET_ITINERARIES_ERROR} from './actionsTypes'
 
 
 
-export const getItineraries = (cityId) => {
+export const getItineraries = () => {
     return (dispatch) => {
         axios.get("http://localhost:5000/api/itineraries/")
         .then( res => {
@@ -26,6 +26,7 @@ export const getItineraries = (cityId) => {
 
 export const getItinerariesById = (cityId) => {
     return (dispatch) => {
+        console.log(cityId);
         axios.get("http://localhost:5000/api/itineraries/" + cityId)
         .then( res => {
             dispatch({
