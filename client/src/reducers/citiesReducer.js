@@ -26,3 +26,8 @@ default: return state
 }
 
 export default citiesReducer
+
+
+
+// The reducer is a pure function that takes the previous state and an action, 
+// and returns the next state. (previousState, action) => newState 

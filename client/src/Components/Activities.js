@@ -16,9 +16,10 @@ class Activities extends React.Component {
       return (
         this.props.activities.map((oneActivity, index) => {
           return (
+
             <div key={index}>
               
-              <img src={oneActivity.pic} />
+              <img className='oneActivityContainer' src={oneActivity.pic} />
             
             </div>
             );

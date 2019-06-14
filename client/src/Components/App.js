@@ -4,6 +4,10 @@ import { browserHistory } from 'react-router';
 import HomePage from './HomePage';
 import NavBar from './HeaderComponent/NavBar';
 import Footer from './FooterComponent/Footer';
+import Register from './auth/Register';
+import Login from './auth/Login';
+
+
 // Redux
 import { Provider } from 'react-redux';
 import store from '../store';
@@ -23,8 +27,10 @@ class App extends Component {
             <NavBar />
             <Route name="home" exact path="/" component={HomePage} />
             <Route name="cities" exact path="/cities" component={Cities} />
-            <Route name="itineraryPage" exact path="/itineraries/:id" component={Itineraries} />
-            <Route name="itineraries" exact path="/itineraries" component={Itineraries} />
+            <Route name="itineraries" exact path="/itineraries/:id" component={Itineraries} />
+            {/* <Route name="itineraries" exact path="/itineraries" component={Itineraries} /> */}
+            <Route name="login" exact path="/login" component={Login} />
+
 		    <Footer />
           </div>
         </Router>

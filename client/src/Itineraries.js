@@ -36,16 +36,13 @@ this.props.getItinerariesById(this.props.match.params.id)
     //const cities = this.state.citiesComponent
     const itineraries = this.props.itineraries
     return (
-		<div className='itinerariesContainer'>
+		<div>
 
 	{itineraries && itineraries.map(itinerary => {
         return(
-            <div key={itinerary._id}>
+            <div className='itinerariesContainer' key={itinerary._id}>
                 <h2>{itinerary.title}</h2>
-                <p>{itinerary.cityName}</p>
-                <p>{itinerary.hashtag}</p>
-                <p>{itinerary.rating}</p>
-                <p>{itinerary.Price}</p>
+                <p>{itinerary.cityName}, {itinerary.hashtag}, {itinerary.rating}, {itinerary.Price}</p>
               {/* <img src={itinerary.activities.pic} className='picContainer'/> */}
               <Button
                 variant="primary"
@@ -55,14 +52,9 @@ this.props.getItinerariesById(this.props.match.params.id)
                 
                   {
                     clicked && <Activities activities={itinerary.activities}></Activities>
-                  }
-            
-                    
-                  
+                  }                 
                 
           </div>
-
-
 
         )
     })}
