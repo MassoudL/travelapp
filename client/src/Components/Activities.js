@@ -16,6 +16,7 @@ class Activities extends React.Component {
       return (
         this.props.activities.map((oneActivity, index) => {
           return (
+            
 
             <div key={index}>
               

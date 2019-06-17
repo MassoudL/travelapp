@@ -6,6 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./Components/App"
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.css';
 
 // Take the React component and show it on the screen
 ReactDOM.render(

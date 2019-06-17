@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import axios from "axios"
 import {getItineraries, getItinerariesById} from './actions/itinerariesActions'
 import Activities from './Components/Activities'
-import { Button} from 'react-bootstrap';
+import { Button, Carousel} from 'react-bootstrap';
 
 class Itineraries extends Component {
     // constructor(props) {
@@ -50,9 +50,24 @@ this.props.getItinerariesById(this.props.match.params.id)
                 { clicked ? 'Close' : 'ViewAll' }
             </Button>
                 
-                  {
+                  <Carousel>{/* {
                     clicked && <Activities activities={itinerary.activities}></Activities>
-                  }                 
+                  }                 */
+                  
+                  itineraries.activities && itineraries.activities.map((oneActivity, index) => {
+                        return (
+                    <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={}
+                      alt="First slide"
+                    />
+                    <Carousel.Caption>
+                      <h3>First slide label</h3>
+                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                      </Carousel.Item>)})}
+                </Carousel>
                 
           </div>
 
