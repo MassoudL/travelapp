@@ -30,7 +30,7 @@
     "redux-thunk": "^2.3.0",
     "serviceworker": "^0.1.7",
     "slick-carousel": "^1.8.1",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
